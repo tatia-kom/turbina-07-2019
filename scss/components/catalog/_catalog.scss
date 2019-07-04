@@ -1,0 +1,78 @@
+@import "layout/var";
+
+.catalog {
+  padding: 32px 0 60px;
+
+  @media (max-width: $xs) {
+    padding: 24px 0 30px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $xs) {
+      display: block;
+    }
+  }
+
+  &__item {
+    box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 16px);
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
+    @media (max-width: $sm) {
+      padding: 15px;
+      margin-top: 24px;
+      width: calc(50% - 12px);
+    }
+
+    @media (max-width: $xs) {
+      width: 100%;
+    }
+  }
+
+  &__info {
+    max-width: 63%;
+    z-index: 1;
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    min-height: 72px;
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    color: $main-grey;
+    font-size: 30px;
+    font-family: $font900;
+    line-height: 36px;
+    display: inline-block;
+    transition: 0.3s;
+
+    &:hover {
+      color: $orange;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  &__img {
+    margin-left: 24px;
+    z-index: 0;
+
+    @media (max-width: $sm) {
+      margin-left: 15px;
+    }
+  }
+}
