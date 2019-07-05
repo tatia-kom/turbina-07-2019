@@ -1,0 +1,62 @@
+@import "layout/var";
+
+.not-found {
+  padding: 80px 0 60px;
+
+  @media (max-width: $xs) {
+    padding: 30px 0;
+  }
+
+  &__nums {
+    font-size: 200px;
+    font-family: $font900;
+    line-height: 154px;
+    color: #F8F8F8;
+    text-align: center;
+
+    @media (max-width: $sm) {
+      font-size: 180px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 140px;
+    }
+  }
+
+  &__title {
+    font-size: 144px;
+    font-family: $font900;
+    line-height: 130px;
+    color: #F8F8F8;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $sm) {
+      font-size: 115px;
+    }
+
+    @media (max-width: $xs) {
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__text {
+    color: #4C4C4C;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $xs) {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  &__button-wrap {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+}
