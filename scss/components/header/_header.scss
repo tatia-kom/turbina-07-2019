@@ -3,6 +3,10 @@
 .header {
   position: relative;
 
+  &--shadow {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
   // top
 
   &__top-menu-wrap {

@@ -1,0 +1,33 @@
+@import "layout/var";
+
+.breads {
+  margin: 13px 0 24px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  font-size: 12px;
+  line-height: 14px;
+  color: $main-grey;
+
+  &__item {
+
+    &:after {
+      content: '/';
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: $main-grey;
+    transition: 0.3s;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
