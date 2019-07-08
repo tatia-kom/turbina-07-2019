@@ -8,6 +8,15 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'Museo Sans 500 Medium';
+  src: url('../fonts/MuseoSansCyrl-500.eot');
+  src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+  url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Museo Sans 700 Bold';
   src: url('../fonts/MuseoSansCyrl-700.eot');
   src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
@@ -27,6 +36,7 @@
 }
 
 $font300: 'Museo Sans 300 Light', sans-serif;
+$font500: 'Museo Sans 500 Medium', sans-serif;
 $font700: 'Museo Sans 700 Bold', sans-serif;
 $font900: 'Museo Sans 900 Black', sans-serif;
 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Карточка товара</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="header__top-menu-wrap">
+            <nav>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed header__top-menu-but" data-toggle="collapse" data-target="#navbar-top">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-top">
+                    <div class="header__top-menu">
+                        <!-- Add class "header__top-menu-link--active" to link for highlighting like below -->
+                        <a href="#" class="header__top-menu-link header__top-menu-link--active">Главная</a>
+                        <a href="#" class="header__top-menu-link">Возврат</a>
+                        <a href="#" class="header__top-menu-link">Доставка</a>
+                        <a href="#" class="header__top-menu-link">Ремонт турбины</a>
+                        <a href="#" class="header__top-menu-link">Контакты</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__main">
+                        <div class="header__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
+                        <div class="header__address">
+                            г. Москва, завод МЕТРОМАШ, ул. Тагильская, дом 4, стр. 4
+                        </div>
+                        <div class="header__credits">
+                            <span class="header__worktime">Ежедневно с 9:00 до 19:00</span>
+                            <a href="#" class="header__phone">+7 (495) 127-76-62</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed header__menu-but" data-toggle="collapse" data-target="#navbar">
+                                    <span class="header__menu-but-text">Каталог</span>
+                                    <div class="header__menu-but-lines">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar">
+                                <div class="header__menu">
+                                    <a href="#" class="header__menu-link">Турбины</a>
+                                    <a href="#" class="header__menu-link">Картриджи</a>
+                                    <a href="#" class="header__menu-link">Клапаны</a>
+                                    <a href="#" class="header__menu-link">Прокладки</a>
+                                    <a href="#" class="header__menu-link">Геометрия</a>
+                                    <a href="#" class="header__menu-link">Ремкомплекты</a>
+                                    <a href="#" class="header__menu-link">Роторы</a>
+                                    <a href="#" class="header__menu-link">Корпусы</a>
+                                    <a href="#" class="header__menu-link">Колесо компрессора</a>
+                                    <a href="#" class="header__menu-link">Запчасти для эл. актуаторов</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header__search-block">
+                        <input type="text" class="header__search-input" placeholder="Поиск по номеру турбины / двигателю">
+                        <button class="orange-button header__search-button">Найти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner__content">
+                        <div class="banner__top">Гарантия <div class="banner__num-wrap"><span class="banner__num">1</span></div> год</div>
+                        <h1 class="banner__title">Интернет магазин по продаже турбин и комплектующих</h1>
+                        <div class="banner__button-wrap">
+                            <button class="banner__button">
+                                Бесплатная консультация
+                                <span class="banner__button-icon"><img src="img/head-phone.svg" alt=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEXT BLOCK -->
+
+    <section class="page-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-title text-center">Турбины</h2>
+
+                    <!-- BREADCRUMBS -->
+
+                    <ul class="breads">
+                        <li class="breads__item"><a href="#" class="breads__link">Главная</a></li>
+                        <li class="breads__item"><a href="#" class="breads__link">Турбины</a></li>
+                        <li class="breads__item">Товар</li>
+                    </ul>
+
+                    <!-- ITEM CARD -->
+
+                    <div class="item-card">
+                        <div class="item-card__left">
+
+                            <!-- SLIDER BIG -->
+
+                            <div class="item-card__slider">
+                                <div class="item-card__slide"><img src="img/item-big.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item-big.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item-big.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item-big.png" alt="" class="img-responsive"></div>
+                            </div>
+
+                            <!-- SLIDER NAV -->
+
+                            <div class="item-card__slider-nav">
+                                <div class="item-card__slide"><img src="img/item.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item.png" alt="" class="img-responsive"></div>
+                                <div class="item-card__slide"><img src="img/item.png" alt="" class="img-responsive"></div>
+                            </div>
+
+                        </div>
+                        <div class="item-card__right">
+                            <h2 class="item-card__title">Турбина</h2>
+                            <p><strong>070-150-023 КАРТРИДЖ ТУРБИНЫ MITSUBISHI, FIAT, HYUNDAI, MD083256, MD083538, MD083373, 28200-42851, 28200-42851</strong></p>
+
+                            <div class="item-card__flex">
+                                <div class="items__price">52 265 <span class="item-card__currency">руб.</span></div>
+                                <button class="orange-button item-card__button">
+                                    Заказать товар <span class="item-card__icon"><img src="img/add-to-card.svg" alt=""></span>
+                                </button>
+                            </div>
+
+                            <p><strong>CHRA №:</strong> 070-150-023 Аналоги: AM.TD04-5, TD04-000, 1000-050-118, 1401-404-900, 49177-09310, 49177-08020</p>
+                            <p><strong>ПРИМЕНЯЕТСЯ В ТУРБИНАХ:</strong> MHI</p>
+                            <p><strong>АВТОМОБИЛЬ:</strong> Mitsubishi Pajero, Montero, D-50 Pick up, Galant III TD, Galant IV TD, Space, Space Wagon, L200 TD, L300, 4D5 US, 4D55, 4D65T, 4D6NF45Z, 1984, 1.8D, 2.3D, 2.5D Fiat Croma TD, 2.0D Hyundai Galloper, 4D56-95TC, 2.5D</p>
+                            <p><strong>ОРИГИНАЛЬНЫЙ НОМЕР ТУРБИНЫ:</strong> MD083256, MD083538, MD083373, MD085823, MD084231, MD086672, MD109528, MD136066, MD158247, MD094740, MD108053, MD106720, MD160054, 28200-42851, 28200-42851, 2820042851, 2820042851</p>
+                            <p><strong>ЗАВОДСКОЙ НОМЕР ТУРБИНЫ:</strong> 49177-00640, 49177-00710, 49177-00750, 49177-01000, 49177-01010, 49177-01020, 49177-01030, 49177-01100, 49177-01200, 49177-01210, 49177-01220, 49177-01230, 49177-01500, 49177-01501, 49177-01510, 49177-01511, 49177-05600, 49177-05800, 49177-07500, 49177-07501, 49177-91100, 49177-91200, 49177-91210</p>
+                        </div>
+                    </div>
+
+                    <h2 class="section-title text-center">Подходит к этим товарам</h2>
+
+                    <!-- ITEMS -->
+
+                    <div class="items">
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                        <div class="items__block">
+                            <div class="items__image">
+                                <img src="img/item.png" alt="" class="img-responsive">
+                            </div>
+                            <a href="#" class="items__title">Турбина</a>
+                            <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                            <div class="items__bottom">
+                                <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                <button class="items__button"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-title">Описание</h2>
+
+                    <div class="text">
+                        <p>Картридж турбины для Mitsubishi, Fiat, Hyundai - это заводская средняя часть турбины отбалансированная заводом производителя и полностью готова к установке в турбину. Состоит из: центрального корпуса турбины, внутреннего набора, ротора турбины и компрессорного колеса турбины (крыльчатки). Каждый картридж перед продажей проходит испытание на разгонном добалансировочном стенде "Turbo Technics". На каждый картридж предоставляется гарантия 1 год. Данный картридж применяется в турбинах MHI с заводскими номерами 49177-00640, 49177-00710, 49177-00750, 49177-01000, 49177-01010, 49177-01020, 49177-01030, 49177-01100, 49177-01200, 49177-01210, 49177-01220, 49177-01230, 49177-01500, 49177-01501, 49177-01510, 49177-01511, 49177-05600, 49177-05800, 49177-07500, 49177-07501, 49177-91100, 49177-91200, 49177-91210 и оригинальными номерами MD083256, MD083538, MD083373, MD085823, MD084231, MD086672, MD109528, MD136066, MD158247, MD094740, MD108053, MD106720, MD160054, 28200-42851, 28200-42851, 2820042851, 2820042851</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer__wrap">
+                        <div class="footer__credits">
+                            <div class="footer__logo"><img src="img/footer-logo.png" alt="" class="img-responsive"></div>
+                            <div class="footer__credit-block">
+                                <span class="header__worktime">Ежедневно с 9:00 до 19:00</span>
+                                <a href="#" class="header__phone footer__phone">+7 (495) 127-76-62</a>
+                            </div>
+                            <div class="footer__credit-block">
+                                <p class="footer__address">г. Москва, завод МЕТРОМАШ, ул. Тагильская, дом 4, стр. 4</p>
+                            </div>
+                        </div>
+                        <div class="footer__middle">
+                            <div class="footer__menu-title">Навигация</div>
+                            <div class="footer__menu footer__menu--columns">
+                                <a href="#" class="footer__menu-link">Турбины</a>
+                                <a href="#" class="footer__menu-link">Картриджи</a>
+                                <a href="#" class="footer__menu-link">Клапаны турбин</a>
+                                <a href="#" class="footer__menu-link">Прокладки турбин</a>
+                                <a href="#" class="footer__menu-link">Геометрии турбин</a>
+                                <a href="#" class="footer__menu-link">Ремонт турбин</a>
+                                <a href="#" class="footer__menu-link">Каталог турбин</a>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__info-menu">
+                                <div class="footer__menu-title">Информация</div>
+                                <div class="footer__menu">
+                                    <a href="#" class="footer__menu-link">Возврат</a>
+                                    <a href="#" class="footer__menu-link">Доставка</a>
+                                    <a href="#" class="footer__menu-link">Ремонт турбин</a>
+                                    <a href="#" class="footer__menu-link">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="footer__insta">
+                                <a href="#" class="footer__insta-link">
+                                    <img src="img/insta.svg" alt="" class="img-responsive">
+                                    <span class="footer__insta-text">Мы в Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <a href="#" class="footer__bottom-link">Карта сайта</a>
+            <a href="#" class="footer__bottom-link">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.item-card__slider-nav').slick({
+                dots: false,
+                arrows: false,
+                autoplay: false,
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.item-card__slider',
+                focusOnSelect: true
+            });
+
+            $('.item-card__slider').slick({
+                dots: false,
+                arrows: false,
+                autoplay: false,
+                infinite: false,
+                asNavFor: '.item-card__slider-nav'
+            });
+        });
+    </script>
+</body>
+</html>
