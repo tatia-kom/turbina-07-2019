@@ -22,7 +22,7 @@ header, footer, section, div, span, p, button, a, input, textarea {
     box-sizing: border-box;
 }
 
-button,input,textarea{
+button,input,textarea,select{
     outline: none;
 }
 button {
@@ -40,6 +40,15 @@ a:focus {
 
 form {
     margin: 0;
+}
+
+input {
+    &::-webkit-input-placeholder { color: $placeholder-color; }
+    &::-moz-placeholder { color: $placeholder-color; }
+    &:-moz-placeholder { color: $placeholder-color; }
+    &::placeholder { color: $placeholder-color; }
+    &::-ms-input-placeholder { color: $placeholder-color; }
+    &:-ms-input-placeholder { color: $placeholder-color; }
 }
 
 strong {
