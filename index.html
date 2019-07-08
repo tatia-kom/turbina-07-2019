@@ -245,6 +245,113 @@
         </div>
     </section>
 
+    <!-- POPULAR -->
+
+    <section class="popular">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="popular__wrap">
+                        <div class="popular__left">
+                            <h2 class="section-title">Популярные товары</h2>
+                            <div class="popular__arrows"></div>
+                        </div>
+                        <div class="items popular__items">
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                            <div class="items__block items__block--three">
+                                <div class="items__image">
+                                    <img src="img/item.png" alt="" class="img-responsive">
+                                </div>
+                                <a href="#" class="items__title">Турбина</a>
+                                <p class="items__description">10009880074 BI-TURBO MERCEDES SPRINTER ...</p>
+                                <div class="items__bottom">
+                                    <div class="items__price">52 265 <span class="items__currency">руб.</span></div>
+                                    <button class="items__button"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- TEXT BLOCK -->
 
     <section class="index-text">
@@ -342,6 +449,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.popular__items').slick({
+                dots: false,
+                arrows: true,
+                appendArrows: $('.popular__arrows'),
+                prevArrow: '<button type="button" class="slick-prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"></button>',
+                autoplay: false,
+                infinite: false,
+                rows: 2,
+                slidesPerRow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            rows: 1,
+                            slidesPerRow: 1,
+                            slidesToShow: 1,
+                            dots: false
+                        }
+                    },
+                ]
+            });
+        });
+    </script>
 </body>
 </html>

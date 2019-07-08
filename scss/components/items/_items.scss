@@ -11,6 +11,7 @@
     margin-top: 32px;
     margin-right: 32px;
     padding: 24px 16px 16px 24px;
+    background: white;
 
     @media (max-width: $sm) {
       width: calc(33% - 20px);
@@ -36,6 +37,24 @@
 
       @media (max-width: $xs) {
         margin-right: 0;
+      }
+    }
+
+    &--three {
+      width: calc(33% - 30px)!important;
+      margin: 0 15px 32px;
+
+      @media (max-width: $md) {
+        padding: 24px 16px;
+      }
+
+      @media (max-width: $xs) {
+        width: 100%!important;
+        margin: 0 0 32px;
+      }
+
+      &:nth-child(4n+4) {
+        margin-right: 15px;
       }
     }
   }
