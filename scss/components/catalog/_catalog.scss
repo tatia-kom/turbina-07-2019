@@ -35,6 +35,13 @@
     @media (max-width: $xs) {
       width: 100%;
     }
+
+    &:hover {
+      transform-origin: center bottom;
+      animation-name: bounce;
+      animation-duration: 0.7s;
+      animation-fill-mode: both;
+    }
   }
 
   &__info {

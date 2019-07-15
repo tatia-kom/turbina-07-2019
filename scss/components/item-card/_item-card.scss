@@ -35,10 +35,11 @@
     margin-top: 12px;
 
     .item-card__slide {
-      margin: 0 15px;
+      padding: 0 15px;
+      margin: 0;
 
       @media (max-width: $xs) {
-        margin: 0 7px;
+        padding: 0 7px;
       }
     }
   }

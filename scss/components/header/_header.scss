@@ -194,6 +194,15 @@
     @media (max-width: $xs) {
       flex-wrap: wrap;
       padding-top: 0;
+      background: #F0F0F0;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media (max-width: $xs) {
+        display: flex;
+      }
     }
   }
 
@@ -218,7 +227,7 @@
     @media (max-width: $xs) {
       width: 50%;
       margin: 5px 0;
-      padding: 0 20px;
+      padding: 0 15px;
     }
   }
 

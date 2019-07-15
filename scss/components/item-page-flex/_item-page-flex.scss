@@ -1,0 +1,14 @@
+@import "layout/var";
+
+.item-page-flex {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $xs) {
+    flex-direction: column-reverse;
+  }
+
+  &__block {
+
+  }
+}

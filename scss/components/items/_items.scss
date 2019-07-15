@@ -22,6 +22,13 @@
       margin-right: 0;
     }
 
+    &:hover {
+      transform-origin: center bottom;
+      animation-name: bounce;
+      animation-duration: 0.7s;
+      animation-fill-mode: both;
+    }
+
     &:nth-child(3n+3) {
       @media (max-width: $sm) {
         margin-right: 0;

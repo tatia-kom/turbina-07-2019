@@ -80,6 +80,10 @@
     @media (max-width: $sm) {
       margin-left: auto;
     }
+
+    @media (max-width: $xs) {
+      margin-left: 0;
+    }
   }
 
   &__menu-title {
