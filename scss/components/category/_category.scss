@@ -89,6 +89,8 @@
   }
 
   &__content {
+    width: 100%;
+
     @media (max-width: $xs) {
       margin-top: 32px;
     }
